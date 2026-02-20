@@ -11,8 +11,8 @@ This is the initial release of the SysMLv1 to SysMLv2 Quick Reference Guide.
 
 [Download](https://de-bok.org/asset/21d729eda620b0d831991303414b2ffaa14e9492) the quick reference guide.
 
-{{:mbse:sysml_v2_transition:cheat_sheet_front.png?direct&800|}}
+![cheat_sheet_front.png](images/cheat_sheet_front.png)
 
-{{:mbse:sysml_v2_transition:cheat_sheet_back.png?direct&800|}}
+![cheat_sheet_back.png](images/cheat_sheet_back.png)
 
 *Content derived from OUSD (R&E) publicly available material*

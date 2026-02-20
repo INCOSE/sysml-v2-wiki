@@ -7,12 +7,16 @@ Requires only Python 3 stdlib (no external packages).
 
 import urllib.request
 import urllib.error
+import urllib.parse
 import re
 import os
 import time
 from pathlib import Path
 
 BASE_URL = "https://www.omgwiki.org/MBSE/doku.php"
+MEDIA_URL = "https://www.omgwiki.org/MBSE/lib/exe/fetch.php"
+IMAGE_EXTS = {".png", ".jpg", ".jpeg", ".gif", ".svg", ".webp"}
+IMAGES_DIR = "docs/images"
 OUTPUT_DIR = Path("/Users/christian/Documents/INCOSE/sysml-v2-wiki")
 
 # Wiki page ID → relative output path (from OUTPUT_DIR)
@@ -144,9 +148,9 @@ def convert_table_block(raw_lines: list[str], current_output: str) -> list[str]:
     result = []
     separator_inserted = False
     for is_header, cells in rows:
-        # Convert links inside cells
+        # Convert media, links, and inline formatting inside cells
+        cells = [process_media(c, current_output) for c in cells]
         cells = [process_links(c, current_output) for c in cells]
-        # Apply inline formatting inside cells
         cells = [apply_inline(c) for c in cells]
         row_str = "| " + " | ".join(cells) + " |"
         result.append(row_str)
@@ -163,6 +167,81 @@ def convert_table_block(raw_lines: list[str], current_output: str) -> list[str]:
         result.insert(1, sep)
 
     return result
+
+
+def download_image(media_id: str) -> str | None:
+    """Download a wiki-hosted image to docs/images/. Returns relative filename or None."""
+    # Strip leading colon and whitespace from media_id
+    media_id = media_id.strip().lstrip(":")
+    # Strip DokuWiki size/display params (e.g. ?direct&800 or ?600)
+    media_id = re.split(r'[?]', media_id)[0].strip()
+
+    filename = media_id.split(":")[-1].replace(" ", "_")  # last segment; sanitize spaces
+    dest = OUTPUT_DIR / IMAGES_DIR / filename
+
+    if dest.exists():
+        return filename  # already downloaded
+
+    url = f"{MEDIA_URL}?media={urllib.parse.quote(media_id, safe=':')}"
+    try:
+        req = urllib.request.Request(url, headers={"User-Agent": "Mozilla/5.0"})
+        with urllib.request.urlopen(req, timeout=30) as resp:
+            data = resp.read()
+        if len(data) < 100:
+            return None
+        dest.parent.mkdir(parents=True, exist_ok=True)
+        dest.write_bytes(data)
+        print(f"    image: {filename}")
+        return filename
+    except Exception as e:
+        print(f"    WARN: could not download image {media_id}: {e}")
+        return None
+
+
+def process_media(text: str, current_output: str) -> str:
+    """Convert DokuWiki {{...}} media/link syntax to Markdown."""
+    current_dir = str(Path(current_output).parent)
+    images_rel = os.path.relpath(IMAGES_DIR, current_dir)
+
+    def replace_media(m):
+        content = m.group(1).strip()
+
+        # Split on | to get target and optional caption
+        if "|" in content:
+            target, caption = content.split("|", 1)
+            target, caption = target.strip(), caption.strip()
+        else:
+            target, caption = content, ""
+
+        # External URL (https://, http://)
+        if re.match(r'https?://', target):
+            label = caption if caption else "Download"
+            return f"[{label}]({target})"
+
+        # Wiki-hosted media (namespace:filename)
+        media_id = target.strip().lstrip(":")
+        media_id_clean = re.split(r'[?]', media_id)[0].strip()
+        filename = media_id_clean.split(":")[-1]
+        ext = Path(filename).suffix.lower()
+
+        if ext in IMAGE_EXTS:
+            dl = download_image(media_id)
+            if dl:
+                img_path = f"{images_rel}/{dl}"
+                alt = caption if caption else filename
+                return f"![{alt}]({img_path})"
+            else:
+                # Fallback: link to wiki media
+                url = f"{MEDIA_URL}?media={media_id_clean}"
+                return f"![{caption or filename}]({url})"
+        else:
+            # Non-image wiki file (PDF, etc.) → link
+            url = f"{MEDIA_URL}?media={media_id_clean}"
+            label = caption if caption else filename
+            return f"[{label}]({url})"
+
+    # Match {{ ... }} — use non-greedy, handle nested spaces
+    return re.sub(r'\{\{(.+?)\}\}', replace_media, text)
 
 
 def apply_inline(text: str) -> str:
@@ -294,7 +373,8 @@ def convert_dokuwiki_to_markdown(raw: str, current_output: str) -> str:
             continue
 
         # ---- Regular text -----------------------------------------------
-        processed = process_links(line, current_output)
+        processed = process_media(line, current_output)
+        processed = process_links(processed, current_output)
         processed = apply_inline(processed)
         output.append(processed)
         i += 1

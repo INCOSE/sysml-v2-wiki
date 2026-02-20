@@ -29,7 +29,7 @@ These changes in the modeling language are significant and will require careful 
 
 The process for transitioning an organization’s MBSE practices and skill base from modeling with SysML v1 to modeling with SysML v2 is shown in Figure 1. The transition plan is intended to lay out how an organization executes this process. The primary objectives for the organization are to ensure their modeling infrastructure is in place to enable their programs and projects to effectively apply MBSE with SysML v2. This process should be executed incrementally to provide their modeling capabilities. 
 
-{{mbse:sysml_v2_transition:sysml_v1_to_sysml_v2_transition.png?600|}}  
+![sysml_v1_to_sysml_v2_transition.png](images/sysml_v1_to_sysml_v2_transition.png)  
 *Figure 1 SysML v1 to SysML v2 Transition Planning Process*
 
 

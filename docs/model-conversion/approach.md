@@ -16,7 +16,7 @@
 
 Figure 1 shows the steps in the conversion process from a SysML v1 model to a SysML v2 model which includes: (1) pre-process the SysML v1 model to prepare it for the transformation, (2) transform the SysML v1 model to a SysML v2 model, (3) post-process the SysML v2 model to better leverage the SysML v2 capabilities, and (4) validate that the SysML v2 model accurately reflects the intent of the SysML v1 model.
 
-{{ :mbse:sysml_v2_transition:sysml_v1_to_sysml_v2_model_conversion.png |}} 
+![sysml_v1_to_sysml_v2_model_conversion.png](../images/sysml_v1_to_sysml_v2_model_conversion.png) 
 Figure 1 Model Conversion Process
 
 In addition, further steps may be required to assess the impact of the SysML v2 model on existing artifacts that were derived from the SysML v1 model. The derived artifacts may need to be updated for the SysML v2 effort, but this is considered outside of the scope of the SysML v1 to SysML v2 model conversion. Each of these steps is summarized below.

@@ -19,9 +19,9 @@ Alternatively, any SysML v2 modeling tool can be used if it supports the textual
 
 The following model files have been **updated** to be based on the SysML v2 Specification 2025-04 release and associated reference implementation.
 
-{{https://www.de-bok.org/asset/45a09d62209810afce38cfa49a5a95d01d2fc2e7|SysML v2 Flashlight Starter Model Overview Presentation}}  
-{{https://de-bok.org/asset/4b8e819b5446ad999551e7d68c625e7d75f83f9f|SysML v2 Flashlight Starter Model Jupyter Lab File (.ipynb)}}  
-{{https://de-bok.org/asset/39898415908a48350628209d59522add76acdfd1|SysML v2 Flashlight Starter Model Text File (.sysml)}}
+[SysML v2 Flashlight Starter Model Overview Presentation](https://www.de-bok.org/asset/45a09d62209810afce38cfa49a5a95d01d2fc2e7)  
+[SysML v2 Flashlight Starter Model Jupyter Lab File (.ipynb)](https://de-bok.org/asset/4b8e819b5446ad999551e7d68c625e7d75f83f9f)  
+[SysML v2 Flashlight Starter Model Text File (.sysml)](https://de-bok.org/asset/39898415908a48350628209d59522add76acdfd1)
 
 
 ---
@@ -31,19 +31,19 @@ The following model files have been **updated** to be based on the SysML v2 Spec
 
 
 The Flashlight Starter Model includes the following: 
-{{:mbse:sysml_v2_transition:Packages.jpg?600|}}  
+![Packages.jpg](images/Packages.jpg)  
 Model Organization:  The model organization includes packages for Requirements, Actions, Parts and Requirements Allocation.
 
-{{:mbse:sysml_v2_transition:Requirements.jpg?600|}}  
+![Requirements.jpg](images/Requirements.jpg)  
 Requirements Tree:  The flashlight specification is modeled as a hierarchy of requirements.
 
-{{:mbse:sysml_v2_transition:Action Tree.jpg?600|}}  
+![Action Tree.jpg](images/Action_Tree.jpg)  
 Action Tree:  The flashlight performs the action to produce directed light which is decomposed into an action tree. The decomposition also shows the inputs and outputs for each action.
 
-{{:mbse:sysml_v2_transition:Parts Tree.jpg?600|}}  
+![Parts Tree.jpg](images/Parts_Tree.jpg)  
 Parts Tree:  The parts tree provides a breakdown of all of the systems parts. 
 
-{{:mbse:sysml_v2_transition:States.jpg?400|}}  
+![States.jpg](images/States.jpg)  
 States:  The flashlight state-based behavior includes the on state and off state and transitions between them.
 
 Upon completing the flashlight starter model, test your knowledge by adding a requirement for a new state (e.g., flashing), and/or other new requirements.  You may also want to generate a SysML v1 model for comparison purposes.
