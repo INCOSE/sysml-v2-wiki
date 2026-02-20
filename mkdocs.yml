@@ -1,0 +1,60 @@
+site_name: INCOSE SysML v2 Transition Guidance
+site_description: INCOSE SysML v1 to v2 Transition Guidance Activity — publicly available material from the DoD-sponsored transition project.
+site_url: https://incose.github.io/sysml-v2-wiki
+repo_url: https://github.com/INCOSE/sysml-v2-wiki
+repo_name: INCOSE/sysml-v2-wiki
+
+theme:
+  name: material
+  palette:
+    - scheme: default
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+    - scheme: slate
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
+  features:
+    - navigation.tabs
+    - navigation.sections
+    - navigation.top
+    - search.highlight
+    - search.suggest
+    - toc.follow
+    - content.tooltips
+
+plugins:
+  - search
+
+markdown_extensions:
+  - tables
+  - attr_list
+  - toc:
+      permalink: true
+
+nav:
+  - Home: index.md
+  - Guidance Products:
+    - Frequently Asked Questions: faq.md
+    - Transition Plan: transition-plan.md
+    - Tool Consideration Checklist: tool-consideration-checklist.md
+    - Modeling Environment & Tools: modeling-environment.md
+    - Quick Reference Guide: quick-reference-guide.md
+    - Flashlight Starter Model: starter-model.md
+    - Tool Capability Summary: tool-capability-summary.md
+    - Learning Resources: learning-resources.md
+  - Model Conversion:
+    - Conversion Approach: model-conversion/approach.md
+    - Conversion Examples: model-conversion/examples.md
+  - Workshops:
+    - IW 2024 — Torrance, CA: workshops/iw-2024.md
+    - IW 2025 — Seville, Spain: workshops/iw-2025.md
+  - Monthly Forums:
+    - 2024 Meeting Files: meetings/2024.md
+    - 2025 Meeting Files: meetings/2025.md
+    - 2026 Meeting Files: meetings/2026.md
