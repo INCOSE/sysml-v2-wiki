@@ -112,13 +112,19 @@ def process_links(line: str, current_output: str) -> str:
 
 
 def _split_table_cells(line: str) -> list[str]:
-    """Split a DokuWiki table row on | or ^, but NOT on | inside [[ ]] links."""
+    """Split a DokuWiki table row on | or ^, but NOT on | inside [[ ]] or {{ }} syntax."""
     PIPE_PLACEHOLDER = "\x00PIPE\x00"
-    # Protect | characters that appear inside [[ ... ]] links
+    # Protect | inside [[ ... ]] links
     protected = re.sub(
         r'\[\[[^\]]*\]\]',
         lambda m: m.group(0).replace("|", PIPE_PLACEHOLDER),
         line,
+    )
+    # Protect | inside {{ ... }} media/links
+    protected = re.sub(
+        r'\{\{[^}]*\}\}',
+        lambda m: m.group(0).replace("|", PIPE_PLACEHOLDER),
+        protected,
     )
     # Replace header delimiters with | for uniform splitting
     protected = protected.replace("^", "|")
