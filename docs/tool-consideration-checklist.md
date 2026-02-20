@@ -1,12 +1,12 @@
 <!-- Source: https://www.omgwiki.org/MBSE/doku.php?id=mbse:sysml_v2_transition:tool_consideration_checklist -->
 
-[[Click Here](http:www.omgwiki.org/MBSE/doku.php?id=mbse:sysml_v2_transition)] to return to the INCOSE SysML v1 to SysML v2 Transition Guidance Activity Team Home Page  
+[[Click Here](http://www.omgwiki.org/MBSE/doku.php?id=mbse:sysml_v2_transition)] to return to the INCOSE SysML v1 to SysML v2 Transition Guidance Activity Team Home Page  
 
 
 # SysML v2 Tool Consideration Checklist
 
 
-[Download](https:www.de-bok.org/asset/ac610bd1388cd5201e090398ab5b07ee1fed6277)
+[Download](https://www.de-bok.org/asset/ac610bd1388cd5201e090398ab5b07ee1fed6277)
 
 This list was developed for tool users and tool developers to use either as requirements or as items to consider when evaluating tools that implement SysML v2 capabilities.  
 

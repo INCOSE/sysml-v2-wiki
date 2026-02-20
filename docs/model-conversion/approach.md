@@ -1,13 +1,13 @@
 <!-- Source: https://www.omgwiki.org/MBSE/doku.php?id=mbse:sysml_v2_transition:model_conversion_approach -->
 
-[[Click Here](http:www.omgwiki.org/MBSE/doku.php?id=mbse:sysml_v2_transition)] to return to the INCOSE SysML v1 to SysML v2 Transition Guidance Activity Team Home Page
+[[Click Here](http://www.omgwiki.org/MBSE/doku.php?id=mbse:sysml_v2_transition)] to return to the INCOSE SysML v1 to SysML v2 Transition Guidance Activity Team Home Page
 
 
 
 ## SysML v1 to SysML v2 Model Conversion Process
 
 
-[Download](https:www.de-bok.org/asset/5bd90f82fab101bdf093103f76ce74ec5411300e)
+[Download](https://www.de-bok.org/asset/5bd90f82fab101bdf093103f76ce74ec5411300e)
 
 
 ---

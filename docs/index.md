@@ -1,6 +1,6 @@
 <!-- Source: https://www.omgwiki.org/MBSE/doku.php?id=mbse:sysml_v2_transition -->
 
-[Click Here](http:www.omgwiki.org/MBSE/doku.php?id) to return to the main MBSE Wiki Page.
+[Click Here](http://www.omgwiki.org/MBSE/doku.php?id) to return to the main MBSE Wiki Page.
 
 
 
@@ -17,11 +17,11 @@ The project is intended to provide early guidance in the form of recommendations
 
 The OMG Systems Modeling Language™ Version 2 beta specifications were adopted by the OMG on June 30, 2023. The SysML v2 submission concluded five years of development, resulting in three specifications and an open-source pilot implementation to validate them. These specifications enable next-generation systems modeling with improved precision, expressiveness, consistency, usability, interoperability, and extensibility over SysML version 1. The three specifications include:
 
-1.[Kernel Modeling Language (KerML)specification version 1.0 beta](https:www.omg.org/spec/KerML/1.0/Beta1) - defines a new metamodel to provide the foundation for SysML v2. Its formal semantics specified as first order of logic with 4D temporal and spatial extent, provide a new level of precision.
+1.[Kernel Modeling Language (KerML)specification version 1.0 beta](https://www.omg.org/spec/KerML/1.0/Beta1) - defines a new metamodel to provide the foundation for SysML v2. Its formal semantics specified as first order of logic with 4D temporal and spatial extent, provide a new level of precision.
 
-2.[Systems Modeling Language (SysML) specification version 2.0 beta](https:www.omg.org/spec/SysML/2.0/Beta1)  - provides the expressive capability to model complex systems and complementary textual and graphical representations that facilitate improved system understanding.
+2.[Systems Modeling Language (SysML) specification version 2.0 beta](https://www.omg.org/spec/SysML/2.0/Beta1)  - provides the expressive capability to model complex systems and complementary textual and graphical representations that facilitate improved system understanding.
 
-3.[Systems Modeling Application Programming Interface (API) and Services specification version 1.0 beta](https:www.omg.org/spec/SystemsModelingAPI/1.0/Beta1) - provides standard services to navigate, query, and update the model that enables interoperability with other tools and software applications throughout the lifecycle of system development.
+3.[Systems Modeling Application Programming Interface (API) and Services specification version 1.0 beta](https://www.omg.org/spec/SystemsModelingAPI/1.0/Beta1) - provides standard services to navigate, query, and update the model that enables interoperability with other tools and software applications throughout the lifecycle of system development.
 
 The specifications are now in their finalization phase with final adoption anticipated in March 2025. 
 
@@ -73,7 +73,7 @@ The specifications are now in their finalization phase with final adoption antic
 # INCOSE International Workshop (IW)
 
 
-[Jan 27-30, 2024 - Torrance, CA](https:www.omgwiki.org/MBSE/doku.php?id=mbse:sysml_v2_transition:sysml_v1_to sysml_v2_transition_information_session)  
+[Jan 27-30, 2024 - Torrance, CA](https://www.omgwiki.org/MBSE/doku.php?id=mbse:sysml_v2_transition:sysml_v1_to sysml_v2_transition_information_session)  
 
 [Feb 1-4, 2025 - Seville, Spain](workshops/iw-2025.md)
 
@@ -84,12 +84,12 @@ The specifications are now in their finalization phase with final adoption antic
 
 ##### 2024
 
-[March 19, DoD SysML v2 Transition Project Overview](https:www.de-bok.org/asset/0d20e1e60007ae6f4c0b61664b25e409704119c5)  
+[March 19, DoD SysML v2 Transition Project Overview](https://www.de-bok.org/asset/0d20e1e60007ae6f4c0b61664b25e409704119c5)  
 
 
 ##### 2025
 
-[Daniel Hettema - "Leveraging Standards for Digital Engineering Operability"](https:www.youtube.com/watch?v=dlemVyUrVAU&list=PLNl1oy_PghgOTlY5wJDH2h7yef7aC-9Cl)  
+[Daniel Hettema - "Leveraging Standards for Digital Engineering Operability"](https://www.youtube.com/watch?v=dlemVyUrVAU&list=PLNl1oy_PghgOTlY5wJDH2h7yef7aC-9Cl)  
 
 
 # Monthly v2 Readiness Forums

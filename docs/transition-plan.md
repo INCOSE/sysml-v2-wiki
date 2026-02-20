@@ -1,13 +1,13 @@
 <!-- Source: https://www.omgwiki.org/MBSE/doku.php?id=mbse:sysml_v2_transition:sysml_v1_to_sysml_v2_transition_guidance -->
 
-[[Click Here](http:www.omgwiki.org/MBSE/doku.php?id=mbse:sysml_v2_transition)] to return to the INCOSE SysML v1 to SysML v2 Transition Guidance Activity Team Home Page
+[[Click Here](http://www.omgwiki.org/MBSE/doku.php?id=mbse:sysml_v2_transition)] to return to the INCOSE SysML v1 to SysML v2 Transition Guidance Activity Team Home Page
 
 
 
 # SysML v1 to SysML v2 Transition Plan Outline and Recommendations
 
 
-[Download](https:www.de-bok.org/asset/a61d03838798c10b96f10d868e40012e8f451f53)
+[Download](https://www.de-bok.org/asset/a61d03838798c10b96f10d868e40012e8f451f53)
 
 
 

@@ -170,8 +170,9 @@ def apply_inline(text: str) -> str:
     # Bold: **text**  (same in MD)
     # Italic: //text// → *text*  (must not match bare // with no content)
     text = re.sub(r'//(.+?)//', r'*\1*', text)
-    # Remove any remaining standalone // that weren't part of a pair
-    text = re.sub(r'//', '', text)
+    # Remove any remaining standalone // that weren't part of a pair,
+    # but NOT :// which is part of a URL (https://, http://, ftp://)
+    text = re.sub(r'(?<!:)//', '', text)
     # Monospace: ''text'' → `text`
     text = re.sub(r"''(.+?)''", r'`\1`', text)
     # Underline: __text__ → HTML (no MD equivalent)

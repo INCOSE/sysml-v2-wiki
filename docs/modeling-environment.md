@@ -1,6 +1,6 @@
 <!-- Source: https://www.omgwiki.org/MBSE/doku.php?id=mbse:sysml_v2_transition:sysml_v1_to_sysml_v2_modeling_environment -->
 
-[[Click Here](http:www.omgwiki.org/MBSE/doku.php?id=mbse:sysml_v2_transition)] to return to the INCOSE SysML v1 to SysML v2 Transition Guidance Activity Team Home Page
+[[Click Here](http://www.omgwiki.org/MBSE/doku.php?id=mbse:sysml_v2_transition)] to return to the INCOSE SysML v1 to SysML v2 Transition Guidance Activity Team Home Page
 
 
 
@@ -17,7 +17,7 @@ This page provides instruction to help with setting up your own SysML v2 textual
 
 | Product | Download | Description |
 | --- | --- | --- |
-| SysML v2 Modeling Environment Setup | [Download](https:www.de-bok.org/asset/3354b407f8db1bbe50f1e7bf9214bd1349049701) | This document is a resource designed to guide engineers in establishing an optimal development environment for SysML v2 utilizing Jupyter Labs. This document aims to equip engineers with the ability to access and learn the SysML v2’s textual modeling notation. This document also provides setup information to gaining access to the governments ARCUS environment. |
+| SysML v2 Modeling Environment Setup | [Download](https://www.de-bok.org/asset/3354b407f8db1bbe50f1e7bf9214bd1349049701) | This document is a resource designed to guide engineers in establishing an optimal development environment for SysML v2 utilizing Jupyter Labs. This document aims to equip engineers with the ability to access and learn the SysML v2’s textual modeling notation. This document also provides setup information to gaining access to the governments ARCUS environment. |
 
 
 
