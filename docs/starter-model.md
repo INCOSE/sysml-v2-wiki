@@ -1,6 +1,6 @@
 <!-- Source: https://www.omgwiki.org/MBSE/doku.php?id=mbse:sysml_v2_transition:sysml_v2_starter_model -->
 
-[[Click Here](http://www.omgwiki.org/MBSE/doku.php?id=mbse:sysml_v2_transition)] to return to the INCOSE SysML v1 to SysML v2 Transition Guidance Activity Team Home Page
+[[Click Here](https://incose.github.io/sysml-v2-wiki/)] to return to the INCOSE SysML v1 to SysML v2 Transition Guidance Activity Team Home Page
 
 
 
@@ -13,7 +13,7 @@ This page includes a short description of the SysML v2 Starter Model with a link
 
 SysML v2 includes both a textual and graphical syntax. The Starter Model is modeled using the open-source Jupyter Lab modeling environment which is primarily a text-based modeling editor. Some limited graphical visualization is available using the Plant UML Plugin integrated with Jupyter. Some limited example graphical views that are generated using the Plant UML plugin are included below. Recognize that many commercial modeling tools will provide full support for modeling with both the graphical and textual syntax, which are complementary renderings of the same underlying model.
 
-Note:  To use the starter model, a Jupyter Lab modeling environment must be set up.  Instructions are available [here](https://www.omgwiki.org/MBSE/doku.php?id=mbse:sysml_v2_transition:sysml_v1_to_sysml_v2_coding_environment).
+Note:  To use the starter model, a Jupyter Lab modeling environment must be set up.  Instructions are available [here](https://incose.github.io/sysml-v2-wiki/modeling-environment/).
 
 Alternatively, any SysML v2 modeling tool can be used if it supports the textual notation conformant with the SysML v2 specification. The SysML v2 Flashlight Starter Model Text File (i.e. .sysml file) can be imported into the tool. 
 

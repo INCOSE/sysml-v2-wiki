@@ -1,6 +1,6 @@
 <!-- Source: https://www.omgwiki.org/MBSE/doku.php?id=mbse:sysml_v2_transition:incose_mbse_iw_2025:tool_capability_summary -->
 
-[[Click Here](http://www.omgwiki.org/MBSE/doku.php?id=mbse:sysml_v2_transition)] to return to the Transition Guidance Activity Team Home Page
+[[Click Here](https://incose.github.io/sysml-v2-wiki/)] to return to the Transition Guidance Activity Team Home Page
 
 
 

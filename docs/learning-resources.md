@@ -1,6 +1,6 @@
 <!-- Source: https://www.omgwiki.org/MBSE/doku.php?id=mbse:sysml_v2_transition:learning_resources -->
 
-[[Click Here](http://www.omgwiki.org/MBSE/doku.php?id=mbse:sysml_v2_transition)] to return to the Transition Guidance Activity Team Home Page
+[[Click Here](https://incose.github.io/sysml-v2-wiki/)] to return to the Transition Guidance Activity Team Home Page
 
 
 
@@ -15,7 +15,7 @@ To submit a resource for inclusion, please complete the short form found here: [
 | **Resource Title/URL** | **Owner** | **Description** |
 | --- | --- | --- |
 | **Interactive Training** |
-| [SysML v2 Basics](https://www.omgwiki.org/MBSE/doku.php?id=safriedenthal@gmail.com) | SAF Consulting | Provide introductory SysML v2 training which introduces the language concepts using both the graphical and textual notation. The language concepts include model organization, system structure, behavior, requirements, analysis, and verification.  The instructor demonstrates how the language concepts are applied to model a simple system with a modeling tool. Student exercises reinforce their understanding of the language concepts. This tutorial provides the student with a basic understanding of SysML v2 that enables them to develop simple models and explore the language in more detail. The class length is nominally 2.5 days. |
+| [SysML v2 Basics](https://incose.github.io/sysml-v2-wiki/) | SAF Consulting | Provide introductory SysML v2 training which introduces the language concepts using both the graphical and textual notation. The language concepts include model organization, system structure, behavior, requirements, analysis, and verification.  The instructor demonstrates how the language concepts are applied to model a simple system with a modeling tool. Student exercises reinforce their understanding of the language concepts. This tutorial provides the student with a basic understanding of SysML v2 that enables them to develop simple models and explore the language in more detail. The class length is nominally 2.5 days. |
 | [The SysML v2 Club](https://clubs.oose.com/sysml-v2-club/) | OOSE | The SysML v2 Club provides a platform for members to access cutting-edge content, resources, and exclusive online courses about the next-generation modeling language SysML v2. |
 | [SysML v2 Kickstarter (US timezone)](https://www.oose.com/seminar/sysml-v2-kickstarter-us-timezone) | OOSE | Your start into the Future of MBSE with 2 intensive days plus 3 months learning club membership. |
 | [Studio SE Development Courses](https://www.studiose.design/courses) | Studio SE | SysML v2 Awareness and Organizational Implementation Planning,  On-Site, v2 Implementation Planning, Consultation, Getting Started with v2 in Cameo, SysML v2 for v1 Practitioners, SysML v2 Master Class, SysML v2 On Demand, SysML v2 OCSMP Exam Prep Add On, SysML v1 to v2 Model Transformation. |

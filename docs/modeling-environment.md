@@ -1,6 +1,6 @@
 <!-- Source: https://www.omgwiki.org/MBSE/doku.php?id=mbse:sysml_v2_transition:sysml_v1_to_sysml_v2_modeling_environment -->
 
-[[Click Here](http://www.omgwiki.org/MBSE/doku.php?id=mbse:sysml_v2_transition)] to return to the INCOSE SysML v1 to SysML v2 Transition Guidance Activity Team Home Page
+[[Click Here](https://incose.github.io/sysml-v2-wiki/)] to return to the INCOSE SysML v1 to SysML v2 Transition Guidance Activity Team Home Page
 
 
 

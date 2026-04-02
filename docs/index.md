@@ -1,6 +1,6 @@
 <!-- Source: https://www.omgwiki.org/MBSE/doku.php?id=mbse:sysml_v2_transition -->
 
-[Click Here](http://www.omgwiki.org/MBSE/doku.php?id) to return to the main MBSE Wiki Page.
+[Click Here](https://incose.github.io/sysml-v2-wiki/) to return to the main MBSE Wiki Page.
 
 
 
@@ -73,7 +73,7 @@ The specifications are now in their finalization phase with final adoption antic
 # INCOSE International Workshop (IW)
 
 
-[Jan 27-30, 2024 - Torrance, CA](https://www.omgwiki.org/MBSE/doku.php?id=mbse:sysml_v2_transition:sysml_v1_to sysml_v2_transition_information_session)  
+[Jan 27-30, 2024 - Torrance, CA](https://incose.github.io/sysml-v2-wiki/workshops/iw-2024/)  
 
 [Feb 1-4, 2025 - Seville, Spain](workshops/iw-2025.md)
 

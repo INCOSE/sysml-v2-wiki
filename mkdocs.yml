@@ -6,15 +6,14 @@ repo_name: INCOSE/sysml-v2-wiki
 
 theme:
   name: material
+  logo: images/INCOSE_Logo_Inverted.svg
   palette:
     - scheme: default
-      primary: indigo
       accent: indigo
       toggle:
         icon: material/brightness-7
         name: Switch to dark mode
     - scheme: slate
-      primary: indigo
       accent: indigo
       toggle:
         icon: material/brightness-4
@@ -27,6 +26,9 @@ theme:
     - search.suggest
     - toc.follow
     - content.tooltips
+
+extra_css:
+  - stylesheets/extra.css
 
 plugins:
   - search
