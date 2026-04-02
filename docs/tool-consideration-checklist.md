@@ -1,6 +1,5 @@
 <!-- Source: https://www.omgwiki.org/MBSE/doku.php?id=mbse:sysml_v2_transition:tool_consideration_checklist -->
 
-[[Click Here](https://incose.github.io/sysml-v2-wiki/)] to return to the INCOSE SysML v1 to SysML v2 Transition Guidance Activity Team Home Page  
 
 
 # SysML v2 Tool Consideration Checklist

@@ -1,6 +1,5 @@
 <!-- Source: https://www.omgwiki.org/MBSE/doku.php?id=mbse:sysml_v2_transition:learning_resources -->
 
-[[Click Here](https://incose.github.io/sysml-v2-wiki/)] to return to the Transition Guidance Activity Team Home Page
 
 
 

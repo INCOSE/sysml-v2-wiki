@@ -1,7 +1,5 @@
 <!-- Source: https://www.omgwiki.org/MBSE/doku.php?id=mbse:sysml_v2_transition -->
 
-[Click Here](https://incose.github.io/sysml-v2-wiki/) to return to the main MBSE Wiki Page.
-
 
 
 # INCOSE SysML v1 to SysML v2 Transition Guidance Activity Team
