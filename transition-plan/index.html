@@ -1,0 +1,1708 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="INCOSE SysML v1 to v2 Transition Guidance Activity — publicly available material from the DoD-sponsored transition project.">
+      
+      
+      
+        <link rel="canonical" href="https://incose.github.io/sysml-v2-wiki/transition-plan/">
+      
+      
+        <link rel="prev" href="../faq/">
+      
+      
+        <link rel="next" href="../tool-consideration-checklist/">
+      
+      
+        
+      
+      
+      <link rel="icon" href="../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.6">
+    
+    
+      
+        <title>Transition Plan - INCOSE SysML v2 Transition Guidance</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.484c7ddc.min.css">
+      
+        
+        <link rel="stylesheet" href="../assets/stylesheets/palette.ab4e12ef.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../stylesheets/extra.css">
+    
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#sysml-v1-to-sysml-v2-transition-plan-outline-and-recommendations" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href=".." title="INCOSE SysML v2 Transition Guidance" class="md-header__button md-logo" aria-label="INCOSE SysML v2 Transition Guidance" data-md-component="logo">
+      
+  <img src="../images/INCOSE_Logo_Inverted.svg" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            INCOSE SysML v2 Transition Guidance
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Transition Plan
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12s-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6a6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/INCOSE/sysml-v2-wiki" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    INCOSE/sysml-v2-wiki
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+            
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href=".." class="md-tabs__link">
+        
+  
+  
+    
+  
+  Home
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+    
+  
+  
+    
+    
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../faq/" class="md-tabs__link">
+          
+  
+  
+  Guidance Products
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../model-conversion/approach/" class="md-tabs__link">
+          
+  
+  
+  Model Conversion
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../workshops/iw-2024/" class="md-tabs__link">
+          
+  
+  
+  Workshops
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../meetings/2024/" class="md-tabs__link">
+          
+  
+  
+  Monthly Forums
+
+        </a>
+      </li>
+    
+  
+
+      
+    </ul>
+  </div>
+</nav>
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="INCOSE SysML v2 Transition Guidance" class="md-nav__button md-logo" aria-label="INCOSE SysML v2 Transition Guidance" data-md-component="logo">
+      
+  <img src="../images/INCOSE_Logo_Inverted.svg" alt="logo">
+
+    </a>
+    INCOSE SysML v2 Transition Guidance
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/INCOSE/sysml-v2-wiki" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    INCOSE/sysml-v2-wiki
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href=".." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Home
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+      
+        
+        
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Guidance Products
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Guidance Products
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../faq/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Frequently Asked Questions
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Transition Plan
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Transition Plan
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#1-overview" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1 Overview
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-transition-planning-approach" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2 Transition Planning Approach
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="2 Transition Planning Approach">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#21-establish-a-transition-team" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.1 Establish a transition team
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#22-develop-the-strategy-and-plans" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.2 Develop the Strategy and Plans
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="2.2 Develop the Strategy and Plans">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#221-transition-objectives" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.2.1 Transition Objectives
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#222-transition-risks" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.2.2 Transition Risks
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#23-conduct-pilots-to-assess-the-impact-on-current-mbse-practices" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.3 Conduct Pilots to Assess the Impact on Current MBSE Practices
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#24-update-modeling-infrastructure" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.4 Update Modeling Infrastructure
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="2.4 Update Modeling Infrastructure">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#241-tool-evaluation-and-selection" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.4.1 Tool Evaluation and Selection
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#242-updating-the-modeling-environment" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.4.2 Updating the Modeling Environment
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#243-update-modeling-methodology-and-practices" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.4.3 Update Modeling Methodology and Practices
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#244-update-the-mbse-training" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.4.4 Update the MBSE Training
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#245-update-the-community-of-practice-websiterepository" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.4.5 Update the Community of Practice Website/Repository
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#246-update-reference-architectures-and-reusable-assets" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.4.6 Update Reference Architectures and Reusable Assets
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#25-considerations-for-deploying-sysml-v2-to-programs" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.5 Considerations for Deploying SysML v2 to Programs
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#26-deploy-mbse-with-sysml-v2-to-programs" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.6 Deploy MBSE with SysML v2 to Programs
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="2.6 Deploy MBSE with SysML v2 to Programs">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#261-monitor-the-improvements" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.6.1 Monitor the Improvements
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../tool-consideration-checklist/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Tool Consideration Checklist
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../modeling-environment/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Modeling Environment & Tools
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../quick-reference-guide/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Quick Reference Guide
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../starter-model/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Flashlight Starter Model
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../tool-capability-summary/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Tool Capability Summary
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../learning-resources/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Learning Resources
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Model Conversion
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Model Conversion
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../model-conversion/approach/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Conversion Approach
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../model-conversion/examples/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Conversion Examples
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Workshops
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Workshops
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../workshops/iw-2024/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    IW 2024 — Torrance, CA
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../workshops/iw-2025/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    IW 2025 — Seville, Spain
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" >
+        
+          
+          <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Monthly Forums
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Monthly Forums
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../meetings/2024/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    2024 Meeting Files
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../meetings/2025/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    2025 Meeting Files
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../meetings/2026/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    2026 Meeting Files
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#1-overview" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1 Overview
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-transition-planning-approach" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2 Transition Planning Approach
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="2 Transition Planning Approach">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#21-establish-a-transition-team" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.1 Establish a transition team
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#22-develop-the-strategy-and-plans" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.2 Develop the Strategy and Plans
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="2.2 Develop the Strategy and Plans">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#221-transition-objectives" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.2.1 Transition Objectives
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#222-transition-risks" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.2.2 Transition Risks
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#23-conduct-pilots-to-assess-the-impact-on-current-mbse-practices" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.3 Conduct Pilots to Assess the Impact on Current MBSE Practices
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#24-update-modeling-infrastructure" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.4 Update Modeling Infrastructure
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="2.4 Update Modeling Infrastructure">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#241-tool-evaluation-and-selection" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.4.1 Tool Evaluation and Selection
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#242-updating-the-modeling-environment" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.4.2 Updating the Modeling Environment
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#243-update-modeling-methodology-and-practices" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.4.3 Update Modeling Methodology and Practices
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#244-update-the-mbse-training" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.4.4 Update the MBSE Training
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#245-update-the-community-of-practice-websiterepository" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.4.5 Update the Community of Practice Website/Repository
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#246-update-reference-architectures-and-reusable-assets" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.4.6 Update Reference Architectures and Reusable Assets
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#25-considerations-for-deploying-sysml-v2-to-programs" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.5 Considerations for Deploying SysML v2 to Programs
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#26-deploy-mbse-with-sysml-v2-to-programs" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.6 Deploy MBSE with SysML v2 to Programs
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="2.6 Deploy MBSE with SysML v2 to Programs">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#261-monitor-the-improvements" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.6.1 Monitor the Improvements
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+  
+  
+
+
+<!-- Source: https://www.omgwiki.org/MBSE/doku.php?id=mbse:sysml_v2_transition:sysml_v1_to_sysml_v2_transition_guidance -->
+
+<h1 id="sysml-v1-to-sysml-v2-transition-plan-outline-and-recommendations">SysML v1 to SysML v2 Transition Plan Outline and Recommendations<a class="headerlink" href="#sysml-v1-to-sysml-v2-transition-plan-outline-and-recommendations" title="Permanent link">&para;</a></h1>
+<p><a href="https://www.de-bok.org/asset/a61d03838798c10b96f10d868e40012e8f451f53">Download</a></p>
+<h2 id="1-overview">1 Overview<a class="headerlink" href="#1-overview" title="Permanent link">&para;</a></h2>
+<p>This document is an outline with recommendations for planning an organization’s transition from Systems Modeling Language (SysML) Version 1 (v1) to SysML v2. Users should tailor this document based on specific transition objectives, the current state of model-based systems engineering (MBSE) practice, the organization’s size and resources, and other factors.</p>
+<p>SysML v2 is the next generation Systems Modeling Language to support the evolving practice of MBSE and to address the challenges of increasing system complexity and technology changes. The objectives for SysML v2 are to increase MBSE effectiveness and MBSE adoption over SysML v1 by making significant improvements in language precision, expressiveness, regularity, interoperability, usability, and extensibility. SysML v2 is intended to enable program MBSE efforts to realize improved system quality through early verification and error detection, and improvements in agility and productivity through broad-based reuse, while reducing development cost, schedule, and risk by providing a shared and precise understanding of the system as it evolves across its life cycle.</p>
+<p>SysML v2 incorporates a new metamodel that designed to address the needs of system modeling while leveraging the capabilities of the Unified Modeling Language (UML) metamodel upon which SysML v1 was based. SysML v2 also includes a textual notation in addition to a graphical notation that facilitate increased precision of the language. SysML v2 includes a standard application program interface (API) to enable interoperability between the system model in SysML v2 and other models and tools that are part of the digital engineering ecosystem.</p>
+<p>These changes in the modeling language are significant and will require careful and deliberate planning to mitigate risks and to ensure an efficient change approach is taken.</p>
+<p><em>Content derived from OUSD (R&amp;E) publicly available material</em></p>
+<h2 id="2-transition-planning-approach">2 Transition Planning Approach<a class="headerlink" href="#2-transition-planning-approach" title="Permanent link">&para;</a></h2>
+<p>The process for transitioning an organization’s MBSE practices and skill base from modeling with SysML v1 to modeling with SysML v2 is shown in Figure 1. The transition plan is intended to lay out how an organization executes this process. The primary objectives for the organization are to ensure their modeling infrastructure is in place to enable their programs and projects to effectively apply MBSE with SysML v2. This process should be executed incrementally to provide their modeling capabilities. </p>
+<p><img alt="sysml_v1_to_sysml_v2_transition.png" src="../images/sysml_v1_to_sysml_v2_transition.png" /><br />
+<em>Figure 1 SysML v1 to SysML v2 Transition Planning Process</em></p>
+<h3 id="21-establish-a-transition-team">2.1 Establish a transition team<a class="headerlink" href="#21-establish-a-transition-team" title="Permanent link">&para;</a></h3>
+<p>A transition team should be established to develop and execute the transition strategy and plans. This team should be integrated with other teams that are responsible for related digital engineering initiatives. The team should have the authority and responsibility to implement organizational change and include a team lead with representation from the business units and other parts of the organization that are transitioning to MBSE with SysML v2. The team should include members with the expertise needed to develop and evolve the MBSE infrastructure including the MBSE methodologies, tools, and training including expertise in both SysML v1 and SysML v2.</p>
+<h3 id="22-develop-the-strategy-and-plans">2.2 Develop the Strategy and Plans<a class="headerlink" href="#22-develop-the-strategy-and-plans" title="Permanent link">&para;</a></h3>
+<p>The strategy should outline the high-level objectives, risks, approach, and key milestones for the transition.  The plan should define the activities to develop the incremental modeling infrastructure capabilities based on the priorities and available resources.  The plan should identify and allocate resources to the plan. The strategy and plan should be coordinated with the sponsor of the transition effort and other primary stakeholders and should be communicated broadly.
+The strategy and plan should include nearer-term opportunities to demonstrate early success, along with mid-term and longer-term opportunities. For example, a near-term opportunity may be to demonstrate the value-added capabilities of SysML v2 in a pilot project. A mid-term opportunity may be to demonstrate the ability of a small team on a smaller program to support a successful System Design Review and Preliminary Design Review by establishing the model of the system architecture and requirements flow down. The longer-term opportunity may be to demonstrate that the architecture and more precise requirements reduced the cost of testing and downstream errors.
+The strategy and plans should include support for both SysML v1 models and SysML v2 models which may co-exist for some time.</p>
+<h4 id="221-transition-objectives">2.2.1 Transition Objectives<a class="headerlink" href="#221-transition-objectives" title="Permanent link">&para;</a></h4>
+<p>The objectives are to transition from the current state of systems modeling with SysML v1 to the future state that enables the effective application of MBSE with SysML v2. The value proposition should be compelling and support the broader goals of the organization to improve productivity, quality, agility, and innovation. It should be clear how the organization’s investment is anticipated to yield project improvements.</p>
+<h4 id="222-transition-risks">2.2.2 Transition Risks<a class="headerlink" href="#222-transition-risks" title="Permanent link">&para;</a></h4>
+<p>There are risks associated with introducing the new SysML v2 modeling tools and integrations with other tools, changes in methodologies, and a workforce with limited experience using SysML v2. There is also risk associated with transforming the SysML v1 model to the SysML v2 model which could result in significant unanticipated effort and require changes to systems engineering work products. These risks can be mitigated by careful planning. The risks should decrease as the organization gains experience in transitioning to SysML v2.</p>
+<h3 id="23-conduct-pilots-to-assess-the-impact-on-current-mbse-practices">2.3 Conduct Pilots to Assess the Impact on Current MBSE Practices<a class="headerlink" href="#23-conduct-pilots-to-assess-the-impact-on-current-mbse-practices" title="Permanent link">&para;</a></h3>
+<p>Identify pilot opportunities and provide the needed resources (e.g., funding, schedule, and expertise) to conduct the pilots. The pilots are used to assess the impact of SysML v2 on the organizations MBSE practices including methodology, tools, and training, and validate the proposed changes to the organizations MBSE practices.</p>
+<p>The pilot should have clear objectives and may vary in size and scope.  A pilot may focus on assessing the impact on MBSE methodology, on MBSE tools, on integration with other methodologies and tools, or on specific modeling practices including modeling guidelines and patterns, or the approach to converting a SysML v1 model to a SysML v2 model. The results of the pilot assess the impact to current practice and validate the proposed changes to the practice.</p>
+<p>The pilots require an initial modeling environment. The open-source pilot implementation can be used as a starter environment to introduce the team to SysML v2. Specific vendor tools can be used as they become available. The pilot offers an important opportunity to collaborate and provide feedback to the tool vendors.</p>
+<p>The pilot should be staffed with team members that have the appropriate skillset. Initial SysML v2 training should be provided to the team members. The team will require on-going support from one or more individuals with SysML v2 expertise.</p>
+<p>Each pilot activity should include identification and collection of key metrics that can be used by programs such as cost estimating metrics where applicable, and other metrics to track progress and the results of the improvement effort.</p>
+<p>An example pilot project that was conducted to evaluate the application of a model-based systems engineering methodology called Object Oriented Systems Engineering Method (OOSEM) and a supporting tool suite is included in Steiner et al. (2016). Although the pilot was conducted several years ago, the systematic approach to conducting the pilot is still applicable and can serve as a reference for conducting other pilots.</p>
+<p>Other typical pilot projects may address one or more of the following pilot objectives:</p>
+<ol>
+<li>Increase awareness of the SysML v2 Modeling Language and its differences with SysML v1  </li>
+<li>Learn the SysML v2 Modeling Language and build the workforce skill base  </li>
+<li>Evaluate current SysML v1 models to define criteria and assess there suitability for model conversion  </li>
+<li>Establish approach for converting SysML v1 models to SysML v2 models  </li>
+<li>Pre-process SysML v1 models to position them for successful transformation to SysML v2  </li>
+<li>Evaluate and recommend changes to existing methodology  </li>
+<li>Evaluate tools as they become available  </li>
+<li>Evaluate current customizations, integrations, plugins etc. and strategize their migration to SysML v2  </li>
+<li>Establish metrics to help manage the transition process and evaluate improvements  </li>
+</ol>
+<h3 id="24-update-modeling-infrastructure">2.4 Update Modeling Infrastructure<a class="headerlink" href="#24-update-modeling-infrastructure" title="Permanent link">&para;</a></h3>
+<h4 id="241-tool-evaluation-and-selection">2.4.1 Tool Evaluation and Selection<a class="headerlink" href="#241-tool-evaluation-and-selection" title="Permanent link">&para;</a></h4>
+<p>The transition team should conduct an evaluation of the candidate SysML v2 modeling tool vendors. Key criteria for the evaluation may include standards conformance to the language and API, usability, execution capability, visualization capability, documentation, and report generation, configuration and model management, integration with other engineering tools, performance, security, acquisition and maintenance costs, and tool support. Another key criterion is support for converting existing SysML v1 models to SysML v2 models. The selection should be deferred until the practitioners have had hands on experience with the modeling tool in the organization’s environment. As noted previously, the tool evaluation can be part of the pilot projects.</p>
+<h4 id="242-updating-the-modeling-environment">2.4.2 Updating the Modeling Environment<a class="headerlink" href="#242-updating-the-modeling-environment" title="Permanent link">&para;</a></h4>
+<p>The selected tool will need to be integrated into the overall modeling environment that often includes many other kinds of tools including requirements management, analysis, hardware and software design, testing, and project management tools. This integration is typically done incrementally based on the workflow priorities. </p>
+<p>In addition, there will be SysML v1 modeling tool extensions such as plugins and scripts that contain a broad array of customized concepts and functionality. Each extension will need to be assessed to determine if it is needed in SysML v2. Some plugins may be able to be replaced by standard SysML v2 language extensions. Other customizations may leverage the SysML v2 API to develop standardized applications that can interoperate with multiple tools.</p>
+<p>The ability to support modeling in both a classified and unclassified environment should be considered. For example, the unclassified models can be considered project usages that can be used in a classified environment.</p>
+<h4 id="243-update-modeling-methodology-and-practices">2.4.3 Update Modeling Methodology and Practices<a class="headerlink" href="#243-update-modeling-methodology-and-practices" title="Permanent link">&para;</a></h4>
+<p>The results of the pilot projects can be used to update to the modeling practices that includes the modeling guidelines, patterns, and MBSE methodology. The MBSE methodology defines how the organization’s systems engineering process is performed using a model-based approach. The usage focused modeling approach should be considered when updating the methodology. This methodology serves as a reference methodology that programs can adapt and tailor to meet their needs.</p>
+<h4 id="244-update-the-mbse-training">2.4.4 Update the MBSE Training<a class="headerlink" href="#244-update-the-mbse-training" title="Permanent link">&para;</a></h4>
+<p>A training plan should be established that includes who should be trained and what level of training is required, when they should be trained, and how they should be trained. The level of training will vary from early awareness training across the broad community, to more specific training in the language, methodology, and tools that depend on the role of the person being trained. Just-in-time project-specific training can be tailored to the needs of a project.</p>
+<h4 id="245-update-the-community-of-practice-websiterepository">2.4.5 Update the Community of Practice Website/Repository<a class="headerlink" href="#245-update-the-community-of-practice-websiterepository" title="Permanent link">&para;</a></h4>
+<p>The modeling methodology, practices, tool guidance, and training content can be made available on an organizational repository for broad access and use. This augments the enterprise reuse repository containing reusable model assets. The organizational repository/website must be maintained with easily searchable content to be useful.</p>
+<h4 id="246-update-reference-architectures-and-reusable-assets">2.4.6 Update Reference Architectures and Reusable Assets<a class="headerlink" href="#246-update-reference-architectures-and-reusable-assets" title="Permanent link">&para;</a></h4>
+<p>As SysML v2 models are developed on programs, the models and updated practices can be evaluated by the organization to assess how these models and practices can be reused across the organization.  Reference architectures can be created for each relevant application domain (e.g., UAV, Command and Control System). This is done by creating logical abstractions and/or product lines that can be used as a basis for developing specific design configurations. In addition, component models can be specified, validated, and captured in reuse libraries. The access to the enterprise reuse repository may need to support different classification levels, where classified models can access unclassified models as project usages. A disciplined configuration management process is essential for effective reuse.</p>
+<h3 id="25-considerations-for-deploying-sysml-v2-to-programs">2.5 Considerations for Deploying SysML v2 to Programs<a class="headerlink" href="#25-considerations-for-deploying-sysml-v2-to-programs" title="Permanent link">&para;</a></h3>
+<p>Some critical questions regarding the transition will be, which programs should transition from SysML v1 to SysML v2, when to transition, and whether to convert an existing SysML v1 model to SysML v2 or just leverage the SysML v1 model as an input to a new start.   </p>
+<p>The question of whether to transition should be assessed for each program in terms of its positive and negative impacts on program cost, schedule, technical performance, and risk in the near, mid, and longer term.  Some legacy programs will continue to use SysML v1 for several years until SysML v1 tools are no longer supported. The introduction of SysML v2 should realize benefits that include reduced ambiguity of requirements, a more understandable and scalable model of the system architecture, a system model that is more interoperable with other engineering models and tools through the API, and significant improvements in maintainability and reuse of the system model. As noted previously, there are also transition risks associated with introducing the new SysML v2 modeling tools and integrations with other tools, changes in methodologies, and a workforce with limited experience using SysML v2. In addition, there are risks associated with converting the SysML v1 model to the SysML v2 model which could result in significant unanticipated effort and require changes to systems engineering work products.</p>
+<p>The question of when to transition will also need to be assessed for each program.  The appropriate point in the program life cycle will need to be identified that minimizes risk and maximizes the benefits to the program in the near-term, mid-term, and long-term. Typically, the transition should occur during the proposal phase of a new program or program upgrade prior to contract award. This enables the systems modeling team to establish the practices and preliminary system model prior to contract award. However, if a program is already underway, then a transition could occur around a program milestone, such as a System Requirements Review, System Functional Review, Preliminary Design Review, or Critical Design Review. There would need to be a parallel effort leading up to the program milestone to establish the baseline SysML v2 model to insert at that point in the life cycle.</p>
+<p>The question of whether to convert the SysML v1 model to a SysML v2 model or to leverage the SysML v1 model as an input to a new start depends in part on the current state of the SysML v1 model and the extent to which it satisfies the modeling objectives. For example, if the SysML v1 model is quite mature and satisfying the modeling objectives, then it is a good candidate for conversion. If the SysML v1 model is not considered to be a mature model and/or it is not satisfying the model objectives, then it may be preferred to leverage the SysML v1 model as an input but a new SysML v2 modeling start. In either case, the model conversion should be done incrementally and validated at each step (refer to the SysML v1 to SysML v2 model conversion process). The conversion of the existing SysML v1 model also depends on whether the current team was heavily involved in the development of the SysML v1 model or whether this a new team who had limited or no involvement in the development of the SysML v1 model.</p>
+<p>An additional question is whether the entire model needs to be converted, or perhaps just a portion of the model. There may be cases where only a portion of the model needs to be converted to achieve the program objectives. For example, the new program may only be addressing selected subsystems and may not require the detailed model of all subsystems be converted, or the SysML v1 model may include parametric models to support analysis that may not be required of the SysML v2 model at this time.</p>
+<h3 id="26-deploy-mbse-with-sysml-v2-to-programs">2.6 Deploy MBSE with SysML v2 to Programs<a class="headerlink" href="#26-deploy-mbse-with-sysml-v2-to-programs" title="Permanent link">&para;</a></h3>
+<p>Deploying MBSE with SysML v2 to a program should address the deployment considerations described previously. The program stakeholders must be involved in the decision and support the decision for this to be successful. The organization transition/improvement team should assist the program by providing the organizational infrastructure and technical support. </p>
+<p>The program stakeholders include the systems modeling team as well as other engineering disciplines who interpret and interact with the model. The stakeholders can cross organizational boundaries between acquirers and suppliers. For example, the stakeholders for a DoD acquisition program include both the government and contractor systems modeling teams. </p>
+<p>A plan for implementing MBSE with SysML v2 should be developed for each selected program. This includes establishing the modeling objectives and scope, tailoring the reference methodology, setting up the modeling environment, staffing and training the team in the language, methodology, and tools, and identifying the key modeling artifacts and their required maturity at each program milestone.</p>
+<p>The modeling environment can leverage the organizational modeling environment but will need to be further adapted to meet the needs of the specific program. This includes additional integration with additional specialized tools and data repositories, and integration with the environment for both the acquirer and other subcontractors and suppliers. This also includes integration with the organizational product life cycle management environments to enable configuration management of the different engineering and management artifacts (e.g., the digital thread).</p>
+<p>Different levels of training may be required for different roles. For example, a systems modeler who is developing the model will require more in-depth training than other engineering disciplines who may interpret and interact with the model. A task lead may require a different level of training to understand expectations from the model and properly task the effort.</p>
+<p>The SysML v2 model will either be converted from the SysML v1 model (refer to the SysML v1 to SysML v2 model conversion process) or it will be developed as a new model that leverages the SysML v1 model as an input. The updated methodology and tools will be used to evolve the SysML v2 model.</p>
+<h4 id="261-monitor-the-improvements">2.6.1 Monitor the Improvements<a class="headerlink" href="#261-monitor-the-improvements" title="Permanent link">&para;</a></h4>
+<p>The organization and the program should monitor the results of the transition to SysML v2. Key metrics should include productivity and quality metrics that address the needs of the current program and provide inputs for future cost estimating, and other typical systems engineering metrics (e.g., requirements satisfaction, technical performance measures). This information can be used to refine and update the organizational infrastructure.</p>
+<p>Lessons learned and program successes should also be captured to provide inputs for improving the modeling infrastructure and sharing this information across the organization.</p>
+<p><em>Content derived from OUSD (R&amp;E) publicly available material</em></p>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  Back to top
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "..", "features": ["navigation.tabs", "navigation.sections", "navigation.top", "search.highlight", "search.suggest", "toc.follow", "content.tooltips"], "search": "../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.79ae519e.min.js"></script>
+      
+    
+  </body>
+</html>
