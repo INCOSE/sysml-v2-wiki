@@ -7,6 +7,7 @@ repo_name: INCOSE/sysml-v2-wiki
 theme:
   name: material
   logo: images/INCOSE_Logo_Inverted.svg
+  homepage: https://www.incose.org
   palette:
     - scheme: default
       accent: indigo
